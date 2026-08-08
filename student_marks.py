@@ -2,7 +2,7 @@ list=[]
 students = {}
 
 while True:
-    print("\nStudent Marks Management System")
+    print("\n\n\n\nStudent Marks Management System")
     print("1. Add Student")
     print("2. Edit Marks")
     print("3. Delete Student")
@@ -15,7 +15,7 @@ while True:
         name = input("Enter student name: ")
         marks = int(input("Enter marks: "))
         students[name] = marks
-        list.append(students)
+        list.append({name: marks})
         print("Student added successfully.")
 
     elif choice == "2":
@@ -39,8 +39,7 @@ while True:
         if students:
             print("\nStudent Marks are:")
             for name, marks in students.items():
-                print(list)
-                break
+                print(f"{name}: {marks}")
         else:
             print("No students records found.")
 
