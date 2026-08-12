@@ -1,21 +1,21 @@
 class Person:
-    def __init__(self, Gender, Dob):
-        self.Name = "unknown"
-        self.Gender = Gender
-        self.Dob = Dob
-    #def __str__(self):
-        #return self.Name
-        #return self.Gender
-        #return self.Dob
+    def __init__(self, gender, dob):
+        self.name = "unknown"
+        self.gender = gender
+        self.dob = dob
+    def __str__(self):
+        return self.name
+        return self.gender
+        return self.dob
     def get_name(self):
-        return self.Name
-    def set_name(self, Name):
-        self.Name = Name
+        return self.name
+    def set_name(self, name):
+        self.name = name
     
-P1 = Person("male", "2001-3-28")
-print(P1.get_name())
-P1.set_name("Twizeyeyesu")
-print(P1.get_name())
-#P2 = Person("Josue", "male", "2003-1-7")
-#print(P1.Name, P1.Gender, P1.Dob)
-#print(P2.Name, P2.Gender, P2.Dob)
+p1 = Person("male", "2001-3-28")
+print(p1.get_name())
+p1.set_name("Twizeyeyesu")
+print(p1.get_name())
+p2 = Person("male", "2003-1-7")
+print(p1.name, p1.gender, p1.dob)
+print(p2.name, p2.gender, p2.dob)
